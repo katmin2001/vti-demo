@@ -29,12 +29,12 @@
                         fill="#4E4AF2" />
                 </svg>
             </div>
-            <button class="sign_in">
+            <a class="sign_in" href="">
                 Sign in
-            </button>
-            <button class="sign_up">
+            </a>
+            <a class="sign_up" href="">
                 Sign up
-            </button>
+            </a>
             <div class="avatar_label">
                 <div class="text">
                     <div class="name">Name</div>
@@ -200,13 +200,15 @@ header {
     margin-right: 25px;
 }
 
-.content_right button {
+.content_right a {
     font-weight: 500;
     height: 100%;
     width: 150px;
     margin-right: 15px;
     border-radius: 12px;
     padding: 19px 0px;
+    text-align: center;
+    text-decoration: none;
 }
 
 .content_right .sign_in {
