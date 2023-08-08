@@ -85,7 +85,7 @@ onMounted(() => {
                             <rect x="38" y="0.810547" width="14" height="4.10557" rx="2.05279" fill="#00009D" />
                         </svg>
                         <div class="name">{{ item.name }}</div>
-                        <div class="price">Price: {{ item.price }} VND</div>
+                        <div class="price">Price: {{ new Intl.NumberFormat('de-DE').format(item?.price) }} VND</div>
                     </div>
                 </router-link>
             </div>
@@ -120,7 +120,7 @@ onMounted(() => {
                             <rect x="38" y="0.810547" width="14" height="4.10557" rx="2.05279" fill="#00009D" />
                         </svg>
                         <div class="name">{{ item.name }}</div>
-                        <div class="price">Price: {{ item.price }} VND</div>
+                        <div class="price">Price: {{ new Intl.NumberFormat('de-DE').format(item?.price) }} VND</div>
                     </div>
                 </router-link>
             </div>
@@ -137,7 +137,7 @@ onMounted(() => {
                                 <rect x="38" y="0.810547" width="14" height="4.10557" rx="2.05279" fill="#00009D" />
                             </svg>
                             <div class="name">{{ item.name }}</div>
-                            <div class="price">Price: {{ item.price }} VND</div>
+                            <div class="price">Price: {{ new Intl.NumberFormat('de-DE').format(item?.price) }} VND</div>
                         </div>
                     </div>
                     <div v-else style="cursor: no-drop;">
@@ -152,7 +152,7 @@ onMounted(() => {
                                 <rect x="38" y="0.810547" width="14" height="4.10557" rx="2.05279" fill="#00009D" />
                             </svg>
                             <div class="name">{{ item.name }}</div>
-                            <div class="price">Price: {{ item.price }} VND</div>
+                            <div class="price">Price: {{ new Intl.NumberFormat('de-DE').format(item?.price) }} VND</div>
                         </div>
                     </div>
                 </router-link>
