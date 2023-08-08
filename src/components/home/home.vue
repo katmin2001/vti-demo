@@ -73,7 +73,7 @@ onMounted(() => {
         <div class="features">
             <h1>TRENDING</h1>
             <div class="item-list">
-                <a class="item" v-for="(item, index) in  bestSales.data" :key="index">
+                <router-link :to="/detail/+item.id" class="item" v-for="(item, index) in  bestSales.data" :key="index">
                     <div class="image-container">
                         <img :src="`${config}/${item?.productImages[0].source_image}`" alt="">
                         <div class="sold-out">HOT</div>
@@ -87,7 +87,7 @@ onMounted(() => {
                         <div class="name">{{ item.name }}</div>
                         <div class="price">Price: {{ item.price }} VND</div>
                     </div>
-                </a>
+                </router-link>
             </div>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" width="110" height="9" viewBox="0 0 110 9" fill="none">
@@ -108,7 +108,7 @@ onMounted(() => {
                 </a>
             </div>
             <div v-if="!productsByCategory" class="item-list">
-                <a class="item" v-for="(item, index) in  products" :key="index" v-show="item.status === true"
+                <router-link :to="/detail/+item.id" class="item" v-for="(item, index) in  products" :key="index" v-show="item.status === true"
                     href="#   /detail">
                     <div class="image-container">
                         <img :src="`${config}/${item?.productImages[0].source_image}`" alt="">
@@ -122,10 +122,10 @@ onMounted(() => {
                         <div class="name">{{ item.name }}</div>
                         <div class="price">Price: {{ item.price }} VND</div>
                     </div>
-                </a>
+                </router-link>
             </div>
             <div v-if="productsByCategory.length > 0" class="item-list">
-                <a class="item" v-for="(item, index) in  productsByCategory" :key="index">
+                <router-link :to="/detail/+item.id" class="item" v-for="(item, index) in  productsByCategory" :key="index">
                     <div v-if="item.status === true">
                         <div class="image-container">
                             <img :src="`${config}/${item?.productImages[0].source_image}`" alt="">
@@ -155,7 +155,7 @@ onMounted(() => {
                             <div class="price">Price: {{ item.price }} VND</div>
                         </div>
                     </div>
-                </a>
+                </router-link>
             </div>
             <div v-else class="item-list">
                 <div class="nothing">Nothing</div>

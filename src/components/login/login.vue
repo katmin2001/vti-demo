@@ -52,7 +52,6 @@
             <img src="../../assets/images/banner-login.png" alt="">
         </div>
     </main>
-    <footer></footer>
 </template>
 <style scoped>
 @import url(login.scss);

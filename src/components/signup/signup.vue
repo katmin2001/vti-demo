@@ -60,15 +60,6 @@
                         <input class="input-text" type="text" name="address" id="address" placeholder="Address">
                     </div>
                 </div>
-                <!-- <div class="refo">
-                    <div class="remember-me">
-                        <input type="checkbox" name="" id="">
-                        <label for="">Remember me</label>
-                    </div>
-                    <div class="forgot-pw">
-                        <label> <a href="">Forgot password</a></label>
-                    </div>
-                </div> -->
                 <div class="sign-in">
                     <button>Sign up</button>
                 </div>
@@ -83,7 +74,6 @@
             <img src="../../assets/images/banner-login.png" alt="">
         </div>
     </main>
-    <footer></footer>
 </template>
 <style scoped>
 @import url(../login/login.scss);
